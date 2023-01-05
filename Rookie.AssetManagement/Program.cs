@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Rookie.AssetManagement.Constants;
 using Rookie.AssetManagement.DataAccessor.Data;
 using Rookie.AssetManagement.DataAccessor.Data.Seeds;
 using Rookie.AssetManagement.DataAccessor.Entities;
@@ -24,7 +25,7 @@ namespace Rookie.AssetManagement
                 var roleManager = services.GetRequiredService<RoleManager<IdentityRole<int>>>();
 
                 //await DefaultUsers.SeedAsync(userManager);
-                //await DefaultRoles.SeedAsync(roleManager);
+                await DefaultRoles.SeedAsync(roleManager);
             }
 
             await host.RunAsync();

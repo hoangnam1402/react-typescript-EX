@@ -26,6 +26,22 @@ const initialState: AuthState = {
     loading: false,
 };
 
+// init state of Admin
+// const initialState: AuthState = {
+//     isAuth: true,
+//     loading: false,
+//     account: {
+//         fullName: "Test",
+//         id: 1,
+//         userName: "adminHCM",
+//         location: "HCM",
+//         role: "ADMIN",
+//         staffCode: "null",
+//         isConfirmed: true,
+//         token: "abctoken",
+//     }
+// }
+
 const AuthSlice = createSlice({
     name: 'auth',
     initialState,

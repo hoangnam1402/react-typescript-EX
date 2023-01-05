@@ -99,7 +99,8 @@ namespace Rookie.AssetManagement.Business.Services
             }
 
             var userName = GenerateUserNameExtension.GenerateUserName(userCreateRequest.FirstName, userCreateRequest.LastName, _userManager);
-            var password = GeneratePasswordExtension.GeneratePassword(userName, userCreateRequest.DOB);
+            //var password = GeneratePasswordExtension.GeneratePassword(userName, userCreateRequest.DOB);
+            var password = "123456";
             var staffCode = GenerateStaffCodeExtension.GenerateStaffCode(_userManager);
 
             var newUser = _mapper.Map<User>(userCreateRequest);
