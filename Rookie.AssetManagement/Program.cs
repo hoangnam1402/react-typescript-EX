@@ -25,7 +25,7 @@ namespace Rookie.AssetManagement
                 var roleManager = services.GetRequiredService<RoleManager<IdentityRole<int>>>();
 
                 //await DefaultUsers.SeedAsync(userManager);
-                await DefaultRoles.SeedAsync(roleManager);
+                //await DefaultRoles.SeedAsync(roleManager);
             }
 
             await host.RunAsync();
